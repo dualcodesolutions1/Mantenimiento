@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DualCode Solutions - En Mantenimiento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1B325F 0%, #3A89C9 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #E9F2F9;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .logo-container {
+            margin-bottom: 3rem;
+            animation: pulse 2s ease-in-out infinite;
+            display: inline-block;
+            width: 95px;
+            height: 95px;
+            border-radius: 100%;
+            overflow: hidden; 
+            background: transparent;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #E9F2F9;
+            font-weight: 600;
+        }
+        .message {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            color: #9CC4E4;
+            line-height: 1.6;
+        }
+        .spinner {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 2rem;
+            border: 4px solid #9CC4E4;
+            border-top: 4px solid #E9F2F9;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .code-symbols {
+            font-size: 3rem;
+            color: #3A89C9;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+        .info-text {
+            font-size: 1rem;
+            color: #9CC4E4;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+            
+            .logo-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logosimple.jpeg" alt="DualCode Solutions">
+        </div>
+        <h1>Sitio en Mantenimiento</h1>
+        
+        <div class="spinner"></div>
+        
+        <p class="message">
+            Estamos trabajando para ofrecerte la mejor experiencia.<br>
+            Pronto estaremos listos para mostrarte todo lo que tenemos para vos.
+        </p>
+        
+        <p class="info-text">
+            Gracias por tu paciencia.
+        </p>
+        <p class="info-text">
+            Equipo DualCode.
+        </p>
+    </div>
+</body>
+</html>
